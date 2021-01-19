@@ -1,9 +1,9 @@
 export interface Step {
-  [step: number]: {
+  [step: string]: {
     description: string;
   };
 }
 
 export interface Act {
-  [act: number]: Step;
+  [act: string]: Step;
 }
