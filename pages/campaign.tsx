@@ -1,5 +1,6 @@
 import React from 'react';
 
+import ActAccordion from '../components/ActAccordion';
 import Page from '../components/Page';
 import campaignData from '../data/campaign';
 
@@ -7,15 +8,8 @@ const Home = () => (
   <Page>
     <h1>Campaign</h1>
     <p>Step by step guide to leveling throught Path of Exile campaign:</p>
-    {Object.keys(campaignData).map((actNo) => (
-      <section key={`act-${actNo}`}>
-        <h2>Act {actNo}</h2>
-        {Object.keys(campaignData[actNo]).map((actSteps) => (
-          <p key={`step-${actSteps}`}>
-            {actSteps}. <span>{campaignData[actNo][actSteps].description}</span>
-          </p>
-        ))}
-      </section>
+    {Object.keys(campaignData).map((actNumber) => (
+      <ActAccordion actData={campaignData[actNumber]} actNumber={actNumber} />
     ))}
   </Page>
 );
