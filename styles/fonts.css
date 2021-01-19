@@ -19,8 +19,14 @@ a,
 p {
   font-size: 1.6em;
   margin-bottom: 0.8rem;
+  line-height: 1.4em;
 }
 
 a {
   text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  font-size: 1.6em;
 }
