@@ -1,34 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Path of Exile Pocket Guide
 
-## Getting Started
+This is an application built to help guide players of Path of Exile(PoE).
 
-First, run the development server:
+## Features:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### Leveling guide:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Act by act guide to leveling picking up all passive skills
+- bandit decision helper
+- labyrinth level reminders
+- resistance loss reminders
+- hp and resistance reminders (HC 300HP per act, max resistances)
+- trial locations
+- trial check off
+- gem unlock quests (lily roth/library etc)
+- unlocking the atlas
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Cheat Sheets
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- betrayal table
+- delve fossil biomes
+- tiered strongboxes
+- heist masters and rewards
+- harvest seed tier tables
