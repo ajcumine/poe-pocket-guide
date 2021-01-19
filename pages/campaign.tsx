@@ -8,10 +8,10 @@ const Home = () => (
     <h1>Campaign</h1>
     <p>Step by step guide to leveling throught Path of Exile campaign:</p>
     {Object.keys(campaignData).map((actNo) => (
-      <section>
+      <section key={`act-${actNo}`}>
         <h2>Act {actNo}</h2>
         {Object.keys(campaignData[actNo]).map((actSteps) => (
-          <p>
+          <p key={`step-${actSteps}`}>
             {actSteps}. <span>{campaignData[actNo][actSteps].description}</span>
           </p>
         ))}

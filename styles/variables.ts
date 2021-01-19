@@ -1,4 +1,8 @@
-const colors = {};
+const colors = {
+  background: '#1a113f',
+  white: '#f8f8ff',
+  footer: '#090617',
+};
 
 const size = {
   mobile: '360px',

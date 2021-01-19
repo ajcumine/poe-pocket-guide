@@ -2,15 +2,43 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-const Wrapper = styled.main`
-  height: 100%;
+import styles from '../styles/variables';
+
+const PageWrapper = styled.main`
+  background-color: ${styles.colors.background};
   font-family: 'Fira Sans';
-  display: flex;
-  flex-direction: column;
+  color: ${styles.colors.white};
+  position: relative;
+  min-height: 100vh;
+`;
+
+const ContentWrapper = styled.div`
+  flex: 1 0 auto;
+  padding-bottom: 8rem;
+  margin: 0 1.6rem;
+  @media (min-width: ${styles.size.tablet}) {
+    max-width: 860px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  @media (min-width: ${styles.size.desktop}) {
+    max-width: 1100px;
+  }
+`;
+
+const Footer = styled.footer`
+  background-color: ${styles.colors.footer};
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
 `;
 
 const Page = ({ children }: { children: React.ReactNode }) => (
-  <Wrapper>{children}</Wrapper>
+  <PageWrapper>
+    <ContentWrapper>{children}</ContentWrapper>
+    <Footer />
+  </PageWrapper>
 );
 
 export default Page;
