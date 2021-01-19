@@ -1,7 +1,8 @@
 const colors = {
-  background: '#1a113f',
+  purple: '#1a113f',
   white: '#f8f8ff',
-  footer: '#090617',
+  darkPurple: '#090617',
+  blue: '#172b53',
 };
 
 const size = {

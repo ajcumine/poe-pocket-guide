@@ -9,7 +9,11 @@ const Home = () => (
     <h1>Campaign</h1>
     <p>Step by step guide to leveling throught Path of Exile campaign:</p>
     {Object.keys(campaignData).map((actNumber) => (
-      <ActAccordion actData={campaignData[actNumber]} actNumber={actNumber} />
+      <ActAccordion
+        key={`act-${actNumber}`}
+        actData={campaignData[actNumber]}
+        actNumber={actNumber}
+      />
     ))}
   </Page>
 );

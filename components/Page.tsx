@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import styles from '../styles/variables';
 
 const PageWrapper = styled.main`
-  background-color: ${styles.colors.background};
+  background-color: ${styles.colors.purple};
   font-family: 'Fira Sans';
   color: ${styles.colors.white};
   position: relative;
@@ -27,7 +27,7 @@ const ContentWrapper = styled.div`
 `;
 
 const Footer = styled.footer`
-  background-color: ${styles.colors.footer};
+  background-color: ${styles.colors.darkPurple};
   position: absolute;
   bottom: 0;
   width: 100%;
