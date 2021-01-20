@@ -11,8 +11,9 @@ const actEight: Step = {
     description:
       'Open the Sealed Casket and take the Ankh of Eternity. The Ankh is typically found near the entrance of the zone; look for a long bridge.',
   },
-  8: { description: 'Ankh' },
-  9: { description: 'Locate and enter the Ressurection Site and kill Tolman.' },
+  9: {
+    description: 'Locate and enter the Ressurection Site and kill Tolman.',
+  },
   10: { description: 'Talk to Clarissa.' },
   11: { description: 'Return to The Quay.' },
   12: {
@@ -40,15 +41,14 @@ const actEight: Step = {
   22: { description: 'Take the left path and enter the Grand Promenade.' },
   23: { description: 'Enter the Bath House.' },
   24: { description: 'Acquire the Waypoint.' },
-  25: {
-    description:
-      '(Optional): These next steps are both optional, and can be done in either order if you choose to do both, based on what you encounter first.',
-  },
   26: {
+    labyrinth: true,
+    optional: true,
     description:
       'Find the Labyrinth trial and complete it. Portal out and return to the Bath House via Waypoint.',
   },
   27: {
+    optional: true,
     description:
       'Enter the High Gardens and proceed until you encounter the Pools of Terror. Enter and slay Yugul. Portal out and speak to Hargan for the Book of Skill reward. Return to the Bath House via Waypoint.',
   },
@@ -72,7 +72,9 @@ const actEight: Step = {
       'Enter the Harbour Bridge, which is always below the Waypoint.',
   },
   35: { description: 'Enter the Sky Shrine.' },
-  36: { description: 'Kill Solaris and Lunaris.' },
+  36: {
+    description: 'Kill Solaris and Lunaris.',
+  },
   37: { description: 'Enter the Blood Aqueducts.' },
   38: { description: 'Enter Highgate.' },
 };

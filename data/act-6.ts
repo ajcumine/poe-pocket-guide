@@ -2,8 +2,9 @@ import { Step } from './types';
 
 const actSix: Step = {
   1: {
+    optional: true,
     description:
-      '(Optional): This quest is usually worth doing on new league characters as it unlocks Lilly Roth as a gem vendor, and she carries virtually every gem in the game. Enter the Twilight Strand, accessed from the bottom side of Lioneye’s Watch. Clear the area of all monsters and return to Lioneye’s Watch, then speak with Lilly Roth.',
+      'This quest is usually worth doing on new league characters as it unlocks Lilly Roth as a gem vendor, and she carries virtually every gem in the game. Enter the Twilight Strand, accessed from the bottom side of Lioneye’s Watch. Clear the area of all monsters and return to Lioneye’s Watch, then speak with Lilly Roth.',
   },
   2: {
     description:
@@ -32,7 +33,11 @@ const actSix: Step = {
     description:
       'Find and enter the Lower Prison and grab the Waypoint, just inside the entrance.',
   },
-  11: { description: '(Optional): Find the Labyrinth trial and complete it.' },
+  11: {
+    labyrinth: true,
+    optional: true,
+    description: 'Find the Labyrinth trial and complete it.',
+  },
   12: { description: 'Find and enter Shavronne’s Tower.' },
   13: { description: 'Ascend the tower until you reach the Prison Rooftop.' },
   14: { description: 'Kill Brutus and Shavronne.' },
@@ -41,8 +46,9 @@ const actSix: Step = {
       'Go through the Warden’s Chambers and enter the Prisoner’s Gate. Grab the Waypoint.',
   },
   16: {
+    optional: true,
     description:
-      '(Optional): Find the Valley of the Fire Drinker and defeat Abberath. Portal to Lioneye’s Watch and talk to Bestel for the Book of Skill reward. Take the Waypoint back to the Prisoner’s Gate. Head in the other direction of where you found the Valley of the Fire Drinker (e.g. if Abberath is bottom right, head to top right and vice versa).',
+      'Find the Valley of the Fire Drinker and defeat Abberath. Portal to Lioneye’s Watch and talk to Bestel for the Book of Skill reward. Take the Waypoint back to the Prisoner’s Gate. Head in the other direction of where you found the Valley of the Fire Drinker (e.g. if Abberath is bottom right, head to top right and vice versa).',
   },
   17: {
     description:
@@ -53,8 +59,9 @@ const actSix: Step = {
       'Find and enter The Riverways. Follow the main road to find the Waypoint.',
   },
   19: {
+    optional: true,
     description:
-      '(Optional): Find and enter The Wetlands, usually located in the upper part of the area. Find the Spawning Ground and kill the Puppet Mistress. Portal or logout to return to Lioneye’s Watch and speak to Tarkleigh for the Book of Skill reward. Return to The Riverways via Waypoint.',
+      'Find and enter The Wetlands, usually located in the upper part of the area. Find the Spawning Ground and kill the Puppet Mistress. Portal or logout to return to Lioneye’s Watch and speak to Tarkleigh for the Book of Skill reward. Return to The Riverways via Waypoint.',
   },
   20: {
     description:
