@@ -6,7 +6,7 @@ import styles from '../styles/variables';
 
 const PageWrapper = styled.main`
   background-color: ${styles.colors.purple};
-  font-family: 'Fira Sans';
+  font-family: 'Roboto';
   color: ${styles.colors.white};
   position: relative;
   min-height: 100vh;
