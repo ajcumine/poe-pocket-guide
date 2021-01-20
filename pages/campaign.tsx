@@ -18,7 +18,7 @@ import campaignData from '../data/campaign';
 const Home = () => (
   <Page>
     <Typography variant="h1">Campaign</Typography>
-    <Typography>
+    <Typography variant="subtitle1">
       Step by step guide to leveling throught Path of Exile campaign:
     </Typography>
     <Box boxShadow={3}>
@@ -31,8 +31,8 @@ const Home = () => (
             <List>
               {Object.keys(campaignData[actNumber]).map((stepNumber) => (
                 <ListItem key={`step-${stepNumber}`}>
-                  <ListItemText>
-                    {stepNumber}.{' '}
+                  <Typography>{stepNumber}. </Typography>
+                  <ListItemText inset>
                     {campaignData[actNumber][stepNumber].description}
                   </ListItemText>
                 </ListItem>
