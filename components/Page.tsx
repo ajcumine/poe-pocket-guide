@@ -4,6 +4,7 @@ import { Container } from '@material-ui/core';
 import styled from 'styled-components';
 
 import styles from '../styles/variables';
+import Header from './Header';
 
 const PageWrapper = styled.main`
   background-color: ${styles.colors.purple};
@@ -23,6 +24,7 @@ const Page = ({
   children: React.ReactNodeArray | React.ReactElement;
 }) => (
   <PageWrapper>
+    <Header />
     <StyledContainer>{children}</StyledContainer>
   </PageWrapper>
 );
