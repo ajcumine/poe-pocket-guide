@@ -1,6 +1,6 @@
-import { Step } from './types';
+import { Act } from './types';
 
-const actTwo: Step = {
+const actTwo: Act = {
   1: { description: 'Enter the Riverways, taking the left exit.' },
   2: {
     description:
@@ -56,8 +56,10 @@ const actTwo: Step = {
   },
   19: { description: 'Follow the path until you find the Waypoint.' },
   20: {
+    labyrinth: true,
+    optional: true,
     description:
-      '(Optional): Take the path leading downwards to find the exit to the Felshrine Ruins. Head downwards through the area until you find The Crypt (Level One). Find and complete the Labyrinth Trial within the area, then logout or portal back to town. Take the Waypoint back to the Crossroads.',
+      'Take the path leading downwards to find the exit to the Felshrine Ruins. Head downwards through the area until you find The Crypt (Level One). Find and complete the Labyrinth Trial within the area, then logout or portal back to town. Take the Waypoint back to the Crossroads.',
   },
   21: {
     description: 'Take the right path to find the exit to the Broken Bridge.',
@@ -81,8 +83,9 @@ const actTwo: Step = {
       'Acquire the Waypoint if you come across it, and exit into the Chamber of Sins (Level Two).',
   },
   28: {
-    description:
-      '(Optional): Find the Labyrinth Trial in this area, and complete it.',
+    labyrinth: true,
+    optional: true,
+    description: 'Find the Labyrinth Trial in this area, and complete it.',
   },
   29: {
     description:

@@ -1,6 +1,6 @@
-import { Step } from './types';
+import { Act } from './types';
 
-const actSeven: Step = {
+const actSeven: Act = {
   1: {
     description:
       'Enter the Broken Bridge. Travel towards the bottom left part of the area.',
@@ -14,7 +14,11 @@ const actSeven: Step = {
       'Take the bottom fork from the Waypoint and enter the Fellshrine Ruins.',
   },
   4: { description: 'Enter The Crypt and acquire the Waypoint.' },
-  5: { description: '(Optional): Find the Labyrinth trial and complete it.' },
+  5: {
+    labyrinth: true,
+    optional: true,
+    description: 'Find the Labyrinth trial and complete it.',
+  },
   6: {
     description: 'Find the Sarcophagus and descend to The Crypt (Level Two).',
   },
@@ -39,7 +43,11 @@ const actSeven: Step = {
   },
   14: { description: 'Speak with Silk and take the Obsidian Key.' },
   15: { description: 'Find and enter the Chamber of Sins (Level Two).' },
-  16: { description: '(Optional): Find the Labyrinth trial and complete it.' },
+  16: {
+    optional: true,
+    labyrinth: true,
+    description: 'Find the Labyrinth trial and complete it.',
+  },
   17: { description: 'Enter The Den.' },
   18: { description: 'Proceed and exit into the Ashen Fields.' },
   19: { description: 'Enter the Fortress Encampment.' },
@@ -47,15 +55,16 @@ const actSeven: Step = {
   21: { description: 'Enter the Northern Forest.' },
   22: { description: 'Grab the Waypoint.' },
   23: {
+    optional: true,
     description:
-      '(Optional): Return to town and speak with Helena to receive Greust’s Necklace. This quest only rewards an amulet but usually does not take more than a minute or so in total time, so it is your choice on a league starter whether to complete it. If you encounter the Azmeri Shrine in the Northern Forest, place the necklace there and speak with Helena when you are next in town turning in other quests.',
+      'Return to town and speak with Helena to receive Greust’s Necklace. This quest only rewards an amulet but usually does not take more than a minute or so in total time, so it is your choice on a league starter whether to complete it. If you encounter the Azmeri Shrine in the Northern Forest, place the necklace there and speak with Helena when you are next in town turning in other quests.',
   },
   24: { description: 'Enter the Dread Thicket.' },
   25: {
     description:
-      '    Enter the Den of Despair and kill Gruthkul, then return to the Dread Thicket.',
+      'Enter the Den of Despair and kill Gruthkul, then return to the Dread Thicket.',
   },
-  26: { description: '    Collect 7 Fireflies from around the Dread Thicket.' },
+  26: { description: 'Collect 7 Fireflies from around the Dread Thicket.' },
   27: {
     description:
       'Return to the Bridge Encampment and speak with Eramir to receive the two Books of Skill as a reward.',

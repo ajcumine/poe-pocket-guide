@@ -1,9 +1,13 @@
 export interface Step {
-  [step: string]: {
-    description: string;
-  };
+  description: string;
+  optional?: true;
+  labyrinth?: true;
 }
 
 export interface Act {
-  [act: string]: Step;
+  [step: string]: Step;
+}
+
+export interface Campaign {
+  [actNo: string]: Act;
 }
