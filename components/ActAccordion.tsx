@@ -5,6 +5,7 @@ import {
   AccordionDetails,
   AccordionSummary,
   Box,
+  Table,
   TableBody,
   Typography,
 } from '@material-ui/core';
@@ -21,15 +22,17 @@ const ActAccordion = () => (
           <Typography>Act {actNumber}</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <TableBody>
-            {Object.keys(campaignData[actNumber]).map((stepNumber, index) => (
-              <ActStep
-                key={`step-${stepNumber}`}
-                stepNumber={`${index + 1}`}
-                stepData={campaignData[actNumber][stepNumber]}
-              />
-            ))}
-          </TableBody>
+          <Table size="small">
+            <TableBody>
+              {Object.keys(campaignData[actNumber]).map((stepNumber, index) => (
+                <ActStep
+                  key={`step-${stepNumber}`}
+                  stepNumber={`${index + 1}`}
+                  stepData={campaignData[actNumber][stepNumber]}
+                />
+              ))}
+            </TableBody>
+          </Table>
         </AccordionDetails>
       </Accordion>
     ))}

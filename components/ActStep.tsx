@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { TableCell, TableRow } from '@material-ui/core';
+import { Box, ListItemText, TableCell, TableRow } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 
 import { Step } from '../data/types';
@@ -21,8 +21,19 @@ const ActStep = ({
   stepData: Step;
 }) => (
   <StyledTableRow>
-    <TableCell>{stepNumber}. </TableCell>
-    <TableCell>{stepData.description}</TableCell>
+    <TableCell>
+      <ListItemText>{stepNumber}</ListItemText>
+    </TableCell>
+    <TableCell>
+      <ListItemText>
+        <Box fontStyle="italic" fontWeight={300}>
+          {stepData.optional ? 'optional' : ''}
+        </Box>
+      </ListItemText>
+    </TableCell>
+    <TableCell>
+      <ListItemText>{stepData.description}</ListItemText>
+    </TableCell>
   </StyledTableRow>
 );
 
