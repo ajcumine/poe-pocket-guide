@@ -1,6 +1,6 @@
-import { Step } from './types';
+import { Act } from './types';
 
-const actOne: Step = {
+const actOne: Act = {
   1: {
     description: 'Kill Hillock at the end of the Twilight Strand.',
   },

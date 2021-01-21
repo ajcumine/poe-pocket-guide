@@ -1,6 +1,6 @@
-import { Step } from './types';
+import { Act } from './types';
 
-const actSix: Step = {
+const actSix: Act = {
   1: {
     optional: true,
     description:

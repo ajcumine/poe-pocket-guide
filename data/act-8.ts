@@ -1,6 +1,6 @@
-import { Step } from './types';
+import { Act } from './types';
 
-const actEight: Step = {
+const actEight: Act = {
   1: { description: 'Enter the Toxic Conduits.' },
   2: { description: 'Locate and enter Doedre’s Cesspool.' },
   3: { description: 'Open the grate and enter The Cauldron.' },

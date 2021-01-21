@@ -8,9 +8,9 @@ import actSix from './act-6';
 import actSeven from './act-7';
 import actEight from './act-8';
 import actNine from './act-9';
-import { Act } from './types';
+import { Campaign } from './types';
 
-const campaignData: Act = {
+const campaignData: Campaign = {
   1: actOne,
   2: actTwo,
   3: actThree,

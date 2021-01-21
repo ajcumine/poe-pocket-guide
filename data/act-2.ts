@@ -1,6 +1,6 @@
-import { Step } from './types';
+import { Act } from './types';
 
-const actTwo: Step = {
+const actTwo: Act = {
   1: { description: 'Enter the Riverways, taking the left exit.' },
   2: {
     description:
