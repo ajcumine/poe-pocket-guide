@@ -1,8 +1,17 @@
 import React from 'react';
 
-import { ListItem, ListItemText, Typography } from '@material-ui/core';
+import { TableCell, TableRow } from '@material-ui/core';
+import { withStyles } from '@material-ui/core/styles';
 
 import { Step } from '../data/types';
+
+const StyledTableRow = withStyles((theme) => ({
+  root: {
+    '&:nth-of-type(odd)': {
+      backgroundColor: theme.palette.action.hover,
+    },
+  },
+}))(TableRow);
 
 const ActStep = ({
   stepNumber,
@@ -11,10 +20,10 @@ const ActStep = ({
   stepNumber: string;
   stepData: Step;
 }) => (
-  <ListItem>
-    <Typography>{stepNumber}. </Typography>
-    <ListItemText inset>{stepData.description}</ListItemText>
-  </ListItem>
+  <StyledTableRow>
+    <TableCell>{stepNumber}. </TableCell>
+    <TableCell>{stepData.description}</TableCell>
+  </StyledTableRow>
 );
 
 export default ActStep;
