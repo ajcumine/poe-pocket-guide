@@ -25,8 +25,8 @@ const actTen: Act = {
     description: 'Find the Labyrinth trial and complete it.',
   },
   9: {
-    optional: true,
-    description: 'Find the Elixir of Allure (rewards Respec points).',
+    passives: true,
+    description: 'Find the Elixir of Allure (also rewards Respec points).',
   },
   10: { description: 'Enter the Torched Courts and proceed through the area.' },
   11: {

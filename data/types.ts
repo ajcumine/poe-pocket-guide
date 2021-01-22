@@ -1,6 +1,6 @@
 export interface Step {
   description: string;
-  optional?: true;
+  optional?: string;
   labyrinth?: true;
   passives?: true;
 }

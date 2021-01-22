@@ -2,9 +2,10 @@ import { Act } from './types';
 
 const actSix: Act = {
   1: {
-    optional: true,
+    optional:
+      'unlocks Lilly Roth as a gem vendor, and she sells virtually every gem in the game',
     description:
-      'This quest is usually worth doing on new league characters as it unlocks Lilly Roth as a gem vendor, and she carries virtually every gem in the game. Enter the Twilight Strand, accessed from the bottom side of Lioneye’s Watch. Clear the area of all monsters and return to Lioneye’s Watch, then speak with Lilly Roth.',
+      'Enter the Twilight Strand, accessed from the bottom side of Lioneye’s Watch. Clear the area of all monsters and return to Lioneye’s Watch, then speak with Lilly Roth.',
   },
   2: {
     description:

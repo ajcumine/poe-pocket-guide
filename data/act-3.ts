@@ -100,14 +100,9 @@ const actThree: Act = {
   36: { description: 'Follow the tiled path until you find the Waypoint.' },
   37: { description: 'Three Way Fork' },
   38: {
-    optional: true,
+    optional: 'makes some skill gems purchasable',
     description:
-      'If you need specific gems from the Library quest, take the upper left path at the three way fork, up the stairs. Enter the Library and grab the Waypoint halfway through the area. Continue until you find the Loose Candle.',
-  },
-  39: { description: 'Loose Candle' },
-  40: {
-    description:
-      'Click on it and enter The Archives. Collect the Four Golden Pages before returning to town via portal or logout. Take the Waypoint back to the Library and speak to Siosa for your reward. Take the Waypoint back to the Imperial Gardens',
+      'If you need specific gems from the Library quest, take the upper left path at the three way fork, up the stairs. Enter the Library and grab the Waypoint halfway through the area. Continue until you find the Loose Candle. Click on it and enter The Archives. Collect the Four Golden Pages before returning to town via portal or logout. Take the Waypoint back to the Library and speak to Siosa for your reward. Take the Waypoint back to the Imperial Gardens',
   },
   41: {
     labyrinth: true,

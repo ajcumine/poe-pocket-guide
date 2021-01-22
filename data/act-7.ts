@@ -53,9 +53,9 @@ const actSeven: Act = {
   21: { description: 'Enter the Northern Forest.' },
   22: { description: 'Grab the Waypoint.' },
   23: {
-    optional: true,
+    optional: 'only rewards an amulet but is extremeluy fast to do',
     description:
-      'Return to town and speak with Helena to receive Greust’s Necklace. This quest only rewards an amulet but usually does not take more than a minute or so in total time, so it is your choice on a league starter whether to complete it. If you encounter the Azmeri Shrine in the Northern Forest, place the necklace there and speak with Helena when you are next in town turning in other quests.',
+      'Return to town and speak with Helena to receive Greust’s Necklace. If you encounter the Azmeri Shrine in the Northern Forest, place the necklace there and speak with Helena when you are next in town turning in other quests.',
   },
   24: { description: 'Enter the Dread Thicket.' },
   25: {
