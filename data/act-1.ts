@@ -42,12 +42,12 @@ const actOne: Act = {
   },
   14: { description: 'Kill the Deep Dweller, then logout.' },
   15: {
+    passives: true,
     description:
       'Talk to Tarkleigh for the Book of Skill, then take the Waypoint to the Lower Prison.',
   },
   16: {
     labyrinth: true,
-    optional: true,
     description: 'Find the Labyrinth Trial and complete it.',
   },
   17: { description: 'Locate the exit to the Upper Prison.' },

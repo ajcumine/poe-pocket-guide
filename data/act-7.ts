@@ -16,7 +16,6 @@ const actSeven: Act = {
   4: { description: 'Enter The Crypt and acquire the Waypoint.' },
   5: {
     labyrinth: true,
-    optional: true,
     description: 'Find the Labyrinth trial and complete it.',
   },
   6: {
@@ -44,7 +43,6 @@ const actSeven: Act = {
   14: { description: 'Speak with Silk and take the Obsidian Key.' },
   15: { description: 'Find and enter the Chamber of Sins (Level Two).' },
   16: {
-    optional: true,
     labyrinth: true,
     description: 'Find the Labyrinth trial and complete it.',
   },

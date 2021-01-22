@@ -8,7 +8,6 @@ const actThree: Act = {
   },
   3: {
     labyrinth: true,
-    optional: true,
     description: 'Find the Labyrinth Trial in the Crematorium and complete it.',
   },
   4: {
@@ -31,7 +30,6 @@ const actThree: Act = {
   9: { description: 'Grab the Waypoint.' },
   10: {
     labyrinth: true,
-    optional: true,
     description:
       'Just to the upper right of the Waypoint is the entrance to the Catacombs. Enter and complete the Labyrinth Trial, then logout or portal out and return to the Marketplace via the waypoint.',
   },
@@ -113,7 +111,6 @@ const actThree: Act = {
   },
   41: {
     labyrinth: true,
-    optional: true,
     description:
       'Complete the final Labyrinth Trial for the Normal Lab. From three way fork just above the Waypoint, head upwards and slowly snake your way to the left. The Labyrinth Trial is almost always found in the uppermost left corner of the area.',
   },

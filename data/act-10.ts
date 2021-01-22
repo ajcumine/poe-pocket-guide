@@ -21,7 +21,6 @@ const actTen: Act = {
       'These steps are both optional, and are both found in the Ossuary next to the Waypoint.',
   },
   8: {
-    optional: true,
     labyrinth: true,
     description: 'Find the Labyrinth trial and complete it.',
   },
@@ -41,7 +40,7 @@ const actTen: Act = {
       'Talk to Bannon, then talk to Lani to receive the Flask and Armor rewards.',
   },
   15: {
-    optional: true,
+    passives: true,
     description:
       'Return to the Ravaged Square and head downwards to the bottom middle of the area. Enter the Control Blocks and find Vilenta, located roughly where the Miasmeter was in Act V. Kill Vilenta and return to town via logout or Portal. Talk to Lani to receive the Book of Skill reward.',
   },

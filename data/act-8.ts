@@ -43,12 +43,11 @@ const actEight: Act = {
   24: { description: 'Acquire the Waypoint.' },
   26: {
     labyrinth: true,
-    optional: true,
     description:
       'Find the Labyrinth trial and complete it. Portal out and return to the Bath House via Waypoint.',
   },
   27: {
-    optional: true,
+    passives: true,
     description:
       'Enter the High Gardens and proceed until you encounter the Pools of Terror. Enter and slay Yugul. Portal out and speak to Hargan for the Book of Skill reward. Return to the Bath House via Waypoint.',
   },
