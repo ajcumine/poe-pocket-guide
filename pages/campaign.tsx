@@ -7,6 +7,8 @@ import {
   CardContent,
   Grid,
   Switch,
+  FormGroup,
+  FormControlLabel,
 } from '@material-ui/core';
 
 import ActAccordion from '../components/ActAccordion';
@@ -15,12 +17,28 @@ import Page from '../components/Page';
 const Campaign = () => {
   const [levelingOptions, setLevelingOptions] = useState({
     showOptional: true,
+    showTrials: true,
+    showPassives: true,
   });
+
   const handleOptionalChange = () =>
     setLevelingOptions({
       ...levelingOptions,
       showOptional: !levelingOptions.showOptional,
     });
+
+  const handleTrialsChange = () =>
+    setLevelingOptions({
+      ...levelingOptions,
+      showTrials: !levelingOptions.showTrials,
+    });
+
+  const handlePassivesChange = () =>
+    setLevelingOptions({
+      ...levelingOptions,
+      showPassives: !levelingOptions.showPassives,
+    });
+
   return (
     <Page>
       <Grid container spacing={3}>
@@ -35,19 +53,44 @@ const Campaign = () => {
             <CardContent>
               <Grid container spacing={3}>
                 <Grid item>
-                  <Typography>Show optional quests</Typography>
-                  <Switch
-                    checked={levelingOptions.showOptional}
-                    onChange={handleOptionalChange}
-                  />
+                  <FormGroup>
+                    <Typography>Quest filtering options:</Typography>
+                    <FormControlLabel
+                      label="Optional quests"
+                      control={
+                        <Switch
+                          checked={levelingOptions.showOptional}
+                          onChange={handleOptionalChange}
+                        />
+                      }
+                    />
+                    <FormControlLabel
+                      label="Labyrinth trials"
+                      control={
+                        <Switch
+                          checked={levelingOptions.showTrials}
+                          onChange={handleTrialsChange}
+                        />
+                      }
+                    />
+                    <FormControlLabel
+                      label="Skill point quests"
+                      control={
+                        <Switch
+                          checked={levelingOptions.showPassives}
+                          onChange={handlePassivesChange}
+                        />
+                      }
+                    />
+                  </FormGroup>
                 </Grid>
                 <Grid item xs>
                   <Typography>
                     <Box fontStyle="italic">
-                      It is highly suggested that on your first playthrough you
-                      show all optional quests. They reward passive skill
-                      points, gem purchases, flask rewards, and the labyrinth
-                      unlocks via labyrinth trials.
+                      It is highly suggested that you show all optional quests
+                      on your first playthrough . They reward passive skill
+                      points, gem purchases, flask rewards, and unlock labyrinth
+                      difficulties via labyrinth trials.
                     </Box>
                   </Typography>
                 </Grid>

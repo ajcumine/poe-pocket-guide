@@ -15,9 +15,13 @@ import campaignData from '../data/campaign';
 import ActStep from './ActStep';
 
 const ActAccordion = ({
-  levelingOptions: { showOptional },
+  levelingOptions: { showOptional, showTrials, showPassives },
 }: {
-  levelingOptions: { showOptional: boolean };
+  levelingOptions: {
+    showOptional: boolean;
+    showTrials: boolean;
+    showPassives: boolean;
+  };
 }) => (
   <Box boxShadow={3}>
     {Object.keys(campaignData).map((actNumber) => (
@@ -29,17 +33,21 @@ const ActAccordion = ({
           <Table size="small">
             <TableBody>
               {Object.keys(campaignData[actNumber]).map((stepNumber) => {
-                if (
-                  !showOptional &&
-                  campaignData[actNumber][stepNumber].optional
-                ) {
+                const stepData = campaignData[actNumber][stepNumber];
+                if (!showOptional && stepData.optional) {
                   return null;
                 }
+
+                if (!showTrials && stepData.labyrinth) {
+                  return null;
+                }
+
+                if (!showPassives && stepData.passives) {
+                  return null;
+                }
+
                 return (
-                  <ActStep
-                    key={`step-${stepNumber}`}
-                    stepData={campaignData[actNumber][stepNumber]}
-                  />
+                  <ActStep key={`step-${stepNumber}`} stepData={stepData} />
                 );
               })}
             </TableBody>
