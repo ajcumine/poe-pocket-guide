@@ -14,7 +14,11 @@ import { ExpandMore } from '@material-ui/icons';
 import campaignData from '../data/campaign';
 import ActStep from './ActStep';
 
-const ActAccordion = () => (
+const ActAccordion = ({
+  levelingOptions: { showOptional },
+}: {
+  levelingOptions: { showOptional: boolean };
+}) => (
   <Box boxShadow={3}>
     {Object.keys(campaignData).map((actNumber) => (
       <Accordion key={`act-${actNumber}`}>
@@ -24,13 +28,20 @@ const ActAccordion = () => (
         <AccordionDetails>
           <Table size="small">
             <TableBody>
-              {Object.keys(campaignData[actNumber]).map((stepNumber, index) => (
-                <ActStep
-                  key={`step-${stepNumber}`}
-                  stepNumber={`${index + 1}`}
-                  stepData={campaignData[actNumber][stepNumber]}
-                />
-              ))}
+              {Object.keys(campaignData[actNumber]).map((stepNumber) => {
+                if (
+                  !showOptional &&
+                  campaignData[actNumber][stepNumber].optional
+                ) {
+                  return null;
+                }
+                return (
+                  <ActStep
+                    key={`step-${stepNumber}`}
+                    stepData={campaignData[actNumber][stepNumber]}
+                  />
+                );
+              })}
             </TableBody>
           </Table>
         </AccordionDetails>
