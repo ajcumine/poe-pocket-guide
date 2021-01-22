@@ -2,9 +2,10 @@ import { Act } from './types';
 
 const actSix: Act = {
   1: {
-    optional: true,
+    optional:
+      'unlocks Lilly Roth as a gem vendor, and she sells virtually every gem in the game',
     description:
-      'This quest is usually worth doing on new league characters as it unlocks Lilly Roth as a gem vendor, and she carries virtually every gem in the game. Enter the Twilight Strand, accessed from the bottom side of Lioneye’s Watch. Clear the area of all monsters and return to Lioneye’s Watch, then speak with Lilly Roth.',
+      'Enter the Twilight Strand, accessed from the bottom side of Lioneye’s Watch. Clear the area of all monsters and return to Lioneye’s Watch, then speak with Lilly Roth.',
   },
   2: {
     description:
@@ -35,7 +36,6 @@ const actSix: Act = {
   },
   11: {
     labyrinth: true,
-    optional: true,
     description: 'Find the Labyrinth trial and complete it.',
   },
   12: { description: 'Find and enter Shavronne’s Tower.' },
@@ -46,7 +46,7 @@ const actSix: Act = {
       'Go through the Warden’s Chambers and enter the Prisoner’s Gate. Grab the Waypoint.',
   },
   16: {
-    optional: true,
+    passives: true,
     description:
       'Find the Valley of the Fire Drinker and defeat Abberath. Portal to Lioneye’s Watch and talk to Bestel for the Book of Skill reward. Take the Waypoint back to the Prisoner’s Gate. Head in the other direction of where you found the Valley of the Fire Drinker (e.g. if Abberath is bottom right, head to top right and vice versa).',
   },
@@ -59,7 +59,7 @@ const actSix: Act = {
       'Find and enter The Riverways. Follow the main road to find the Waypoint.',
   },
   19: {
-    optional: true,
+    passives: true,
     description:
       'Find and enter The Wetlands, usually located in the upper part of the area. Find the Spawning Ground and kill the Puppet Mistress. Portal or logout to return to Lioneye’s Watch and speak to Tarkleigh for the Book of Skill reward. Return to The Riverways via Waypoint.',
   },

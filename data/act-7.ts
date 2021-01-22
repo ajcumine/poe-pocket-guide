@@ -16,7 +16,6 @@ const actSeven: Act = {
   4: { description: 'Enter The Crypt and acquire the Waypoint.' },
   5: {
     labyrinth: true,
-    optional: true,
     description: 'Find the Labyrinth trial and complete it.',
   },
   6: {
@@ -44,7 +43,6 @@ const actSeven: Act = {
   14: { description: 'Speak with Silk and take the Obsidian Key.' },
   15: { description: 'Find and enter the Chamber of Sins (Level Two).' },
   16: {
-    optional: true,
     labyrinth: true,
     description: 'Find the Labyrinth trial and complete it.',
   },
@@ -55,9 +53,9 @@ const actSeven: Act = {
   21: { description: 'Enter the Northern Forest.' },
   22: { description: 'Grab the Waypoint.' },
   23: {
-    optional: true,
+    optional: 'only rewards an amulet but is extremeluy fast to do',
     description:
-      'Return to town and speak with Helena to receive Greust’s Necklace. This quest only rewards an amulet but usually does not take more than a minute or so in total time, so it is your choice on a league starter whether to complete it. If you encounter the Azmeri Shrine in the Northern Forest, place the necklace there and speak with Helena when you are next in town turning in other quests.',
+      'Return to town and speak with Helena to receive Greust’s Necklace. If you encounter the Azmeri Shrine in the Northern Forest, place the necklace there and speak with Helena when you are next in town turning in other quests.',
   },
   24: { description: 'Enter the Dread Thicket.' },
   25: {

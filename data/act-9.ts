@@ -8,7 +8,7 @@ const actNine: Act = {
   },
   3: { description: 'Locate and acquire the Waypoint.' },
   4: {
-    optional: true,
+    passives: true,
     description:
       'Locate the Storm Weathered Chest. Defeat the waves of mummies that ambush you, then take the Storm Blade. Return to town via Portal Scroll Portal Scroll and speak with Petarus and Vanja. Talk to Sin, then speak again with Petarus and Vanja. Use your portal to return to the Vastiri Desert. Find the entrance to The Oasis, which will now be accessible using the Bottled Storm. Traverse the area and enter the Sand Pit. Kill Shakari and return to Highgate. Speak to Irasha for the Book of Skill reward. Return to the Vastiri Desert via Waypoint.',
   },
@@ -33,7 +33,6 @@ const actNine: Act = {
   11: { description: 'Acquire the Waypoint.' },
   12: {
     labyrinth: true,
-    optional: true,
     description: 'Find the Labyrinth trial and complete it.',
   },
   13: {
@@ -50,7 +49,7 @@ const actNine: Act = {
   },
   16: { description: 'General Adus' },
   17: {
-    optional: true,
+    passives: true,
     description:
       'Enter the Shrine of the Winds and slay Garukhan. Return to town via Portal or logout, then speak with Irasha to receive the Book of Skill reward. Return to The Quarry via Waypoint.',
   },

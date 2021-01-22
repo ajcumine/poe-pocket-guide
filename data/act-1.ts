@@ -18,8 +18,9 @@ const actOne: Act = {
   },
   5: {
     description:
-      'Take the Waypoint back to the Coast and enter the Tidal Island to the right. This is recommended for league starters due to the Quicksilver Flask Quicksilver Flask it provides, as well as the gems it unlocks as rewards and for purchase. Run straight to Hailrake and kill him. Logout and turn the quest in with Nessa. Ensure you choose the Quicksilver Flask Quicksilver Flask.',
-    optional: true,
+      'Take the Waypoint back to the Coast and enter the Tidal Island to the right. Run straight to Hailrake and kill him. Logout and turn the quest in with Nessa. Ensure you choose the Quicksilver Flask.',
+    optional:
+      'provides a Quicksilver Flask and makes some skill gems purchasable',
   },
   6: { description: 'Talk to Tarkleigh for the gem reward.' },
   7: { description: 'Take the Waypoint to the Submerged Passage.' },
@@ -42,12 +43,12 @@ const actOne: Act = {
   },
   14: { description: 'Kill the Deep Dweller, then logout.' },
   15: {
+    passives: true,
     description:
       'Talk to Tarkleigh for the Book of Skill, then take the Waypoint to the Lower Prison.',
   },
   16: {
     labyrinth: true,
-    optional: true,
     description: 'Find the Labyrinth Trial and complete it.',
   },
   17: { description: 'Locate the exit to the Upper Prison.' },

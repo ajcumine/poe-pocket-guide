@@ -1,6 +1,12 @@
 import React from 'react';
 
-import { Box, ListItemText, TableCell, TableRow } from '@material-ui/core';
+import {
+  Box,
+  Checkbox,
+  ListItemText,
+  TableCell,
+  TableRow,
+} from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 
 import { Step } from '../data/types';
@@ -13,26 +19,18 @@ const StyledTableRow = withStyles((theme) => ({
   },
 }))(TableRow);
 
-const ActStep = ({
-  stepNumber,
-  stepData,
-}: {
-  stepNumber: string;
-  stepData: Step;
-}) => (
+const SecondaryText = ({ stepData }: { stepData: Step }) =>
+  stepData.optional ? <Box fontStyle="italic">{stepData.optional}</Box> : null;
+
+const ActStep = ({ stepData }: { stepData: Step }) => (
   <StyledTableRow>
     <TableCell>
-      <ListItemText>{stepNumber}</ListItemText>
+      <Checkbox />
     </TableCell>
     <TableCell>
-      <ListItemText>
-        <Box fontStyle="italic" fontWeight={300}>
-          {stepData.optional ? 'optional' : ''}
-        </Box>
+      <ListItemText secondary={<SecondaryText stepData={stepData} />}>
+        {stepData.description}
       </ListItemText>
-    </TableCell>
-    <TableCell>
-      <ListItemText>{stepData.description}</ListItemText>
     </TableCell>
   </StyledTableRow>
 );

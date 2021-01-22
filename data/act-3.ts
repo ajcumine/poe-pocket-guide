@@ -8,7 +8,6 @@ const actThree: Act = {
   },
   3: {
     labyrinth: true,
-    optional: true,
     description: 'Find the Labyrinth Trial in the Crematorium and complete it.',
   },
   4: {
@@ -31,7 +30,6 @@ const actThree: Act = {
   9: { description: 'Grab the Waypoint.' },
   10: {
     labyrinth: true,
-    optional: true,
     description:
       'Just to the upper right of the Waypoint is the entrance to the Catacombs. Enter and complete the Labyrinth Trial, then logout or portal out and return to the Marketplace via the waypoint.',
   },
@@ -102,18 +100,12 @@ const actThree: Act = {
   36: { description: 'Follow the tiled path until you find the Waypoint.' },
   37: { description: 'Three Way Fork' },
   38: {
-    optional: true,
+    optional: 'makes some skill gems purchasable',
     description:
-      'If you need specific gems from the Library quest, take the upper left path at the three way fork, up the stairs. Enter the Library and grab the Waypoint halfway through the area. Continue until you find the Loose Candle.',
-  },
-  39: { description: 'Loose Candle' },
-  40: {
-    description:
-      'Click on it and enter The Archives. Collect the Four Golden Pages before returning to town via portal or logout. Take the Waypoint back to the Library and speak to Siosa for your reward. Take the Waypoint back to the Imperial Gardens',
+      'If you need specific gems from the Library quest, take the upper left path at the three way fork, up the stairs. Enter the Library and grab the Waypoint halfway through the area. Continue until you find the Loose Candle. Click on it and enter The Archives. Collect the Four Golden Pages before returning to town via portal or logout. Take the Waypoint back to the Library and speak to Siosa for your reward. Take the Waypoint back to the Imperial Gardens',
   },
   41: {
     labyrinth: true,
-    optional: true,
     description:
       'Complete the final Labyrinth Trial for the Normal Lab. From three way fork just above the Waypoint, head upwards and slowly snake your way to the left. The Labyrinth Trial is almost always found in the uppermost left corner of the area.',
   },

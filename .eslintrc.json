@@ -12,6 +12,7 @@
   ],
   "rules": {
     "react/jsx-key": ["error", { "checkFragmentShorthand": true }],
+    "react/jsx-wrap-multilines": ["error", {"declaration": false, "assignment": false}],
     "react/jsx-one-expression-per-line": 0,
     "react/jsx-props-no-spreading": 0,
     "prettier/prettier": "error",
