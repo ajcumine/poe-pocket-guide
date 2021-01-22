@@ -1,11 +1,16 @@
 import React from 'react';
 
-import Link from '../components/Link';
+import { Container, Grid, Typography } from '@material-ui/core';
+
 import Page from '../components/Page';
 
 const Home = () => (
   <Page>
-    <Link href="/campaign" />
+    <Container>
+      <Grid container>
+        <Typography variant="h3">Welcome to the PoE Pocket Guide</Typography>
+      </Grid>
+    </Container>
   </Page>
 );
 
