@@ -20,7 +20,7 @@ const StyledTableRow = withStyles((theme) => ({
 }))(TableRow);
 
 const SecondaryText = ({ stepData }: { stepData: Step }) =>
-  stepData.optional ? <Box fontStyle="italic">optional</Box> : null;
+  stepData.optional ? <Box fontStyle="italic">{stepData.optional}</Box> : null;
 
 const ActStep = ({ stepData }: { stepData: Step }) => (
   <StyledTableRow>
