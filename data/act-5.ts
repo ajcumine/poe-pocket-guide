@@ -42,7 +42,6 @@ const actFive: Act = {
     description:
       'Enter the Ruined Square. The entrances to other areas in the Ruined Square are always in the same general area of the zone. We have provided an extremely simplified diagram below to help you quickly locate what you are looking for.',
   },
-  14: { description: 'Ruined Square' },
   15: { description: 'Enter the Ossuary.' },
   16: {
     description:
