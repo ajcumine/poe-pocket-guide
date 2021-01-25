@@ -36,7 +36,6 @@ const actFour: Act = {
     description:
       'Enter Daresso’s Dream and proceed through the area until you encounter Barkhul. Defeat him and his bodyguards, then enter The Grand Arena and acquire the Waypoint. Proceed through the arenas until you encounter “The Trio”, a group of three unique enemies. This means that Daresso is in the next area, and signals you are on the correct path. Defeat the Trio and enter The Ring of Blades. Defeat Daresso and take the Eye of Desire. Return to town via logout or Portal, then take the Waypoint to the Crystal Veins.',
   },
-  13: { description: 'The Trio' },
   14: { description: 'Talk to Dialla.' },
   15: {
     description:

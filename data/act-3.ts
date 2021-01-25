@@ -86,7 +86,6 @@ const actThree: Act = {
     description:
       'Look for ascending staircases to quickly find the correct path. Continue following the staircases until you reach the carts. The side with two carts is always a dead end, while the single-cart side is the correct path.',
   },
-  31: { description: 'Lunaris Carts' },
   32: { description: 'Kill Piety and take the Tower Key.' },
   33: {
     description:
@@ -98,11 +97,10 @@ const actThree: Act = {
       'Head to the right of the Waypoint until you find the entrance to the Imperial Gardens.',
   },
   36: { description: 'Follow the tiled path until you find the Waypoint.' },
-  37: { description: 'Three Way Fork' },
   38: {
     optional: 'makes some skill gems purchasable',
     description:
-      'If you need specific gems from the Library quest, take the upper left path at the three way fork, up the stairs. Enter the Library and grab the Waypoint halfway through the area. Continue until you find the Loose Candle. Click on it and enter The Archives. Collect the Four Golden Pages before returning to town via portal or logout. Take the Waypoint back to the Library and speak to Siosa for your reward. Take the Waypoint back to the Imperial Gardens',
+      'If you need specific gems from the Library quest, take the upper left path at the three way fork just above the Waypoint, up the stairs. Enter the Library and grab the Waypoint halfway through the area. Continue until you find the Loose Candle. Click on it and enter The Archives. Collect the Four Golden Pages before returning to town via portal or logout. Take the Waypoint back to the Library and speak to Siosa for your reward. Take the Waypoint back to the Imperial Gardens',
   },
   41: {
     labyrinth: true,
@@ -111,7 +109,7 @@ const actThree: Act = {
   },
   42: {
     description:
-      'From the three way fork above the way point, head to the lower right and up the stairs. Start heading to the upper right, following the tiled path until you find the entrance to the Sceptre of God.',
+      'From the three way fork above the Waypoint, head to the lower right and up the stairs. Start heading to the upper right, following the tiled path until you find the entrance to the Sceptre of God.',
   },
   43: {
     description:
