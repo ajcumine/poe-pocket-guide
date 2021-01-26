@@ -12,3 +12,7 @@ export interface Act {
 export interface Campaign {
   [actNo: string]: Act;
 }
+
+export interface ActNotes {
+  [actNo: string]: string;
+}
