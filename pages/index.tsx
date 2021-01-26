@@ -1,15 +1,22 @@
 import React from 'react';
 
-import { Container, Grid, Typography } from '@material-ui/core';
+import { Container, GridList, GridListTile } from '@material-ui/core';
 
+import HomepageLink from '../components/HomepageLink';
 import Page from '../components/Page';
+import PageTitle from '../components/PageTitle';
+import UsefulLinks from '../components/UsefulLinks';
 
 const Home = () => (
   <Page>
     <Container>
-      <Grid container>
-        <Typography variant="h3">Welcome to the PoE Pocket Guide</Typography>
-      </Grid>
+      <PageTitle title="Welcome to the PoE Pocket Guide" />
+      <GridList cols={3} spacing={8}>
+        <GridListTile>
+          <HomepageLink href="/campaign" title="Leveling Guide" />
+        </GridListTile>
+      </GridList>
+      <UsefulLinks />
     </Container>
   </Page>
 );
