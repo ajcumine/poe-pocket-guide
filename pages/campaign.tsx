@@ -13,6 +13,7 @@ import {
 
 import ActAccordion from '../components/ActAccordion';
 import Page from '../components/Page';
+import PageTitle from '../components/PageTitle';
 
 const Campaign = () => {
   const [levelingOptions, setLevelingOptions] = useState({
@@ -41,13 +42,11 @@ const Campaign = () => {
 
   return (
     <Page>
+      <PageTitle
+        title="Leveling Guide"
+        subtitle="Step by step guide to leveling through the Path of Exile campaign:"
+      />
       <Grid container spacing={3}>
-        <Grid item xs={12}>
-          <Typography variant="h1">Campaign</Typography>
-          <Typography variant="subtitle1">
-            Step by step guide to leveling throught Path of Exile campaign:
-          </Typography>
-        </Grid>
         <Grid item xs={6}>
           <Card variant="outlined">
             <CardContent>

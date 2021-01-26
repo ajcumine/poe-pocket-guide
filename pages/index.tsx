@@ -1,44 +1,22 @@
 import React from 'react';
 
-import {
-  Container,
-  Grid,
-  GridList,
-  GridListTile,
-  Typography,
-} from '@material-ui/core';
+import { Container, GridList, GridListTile } from '@material-ui/core';
 
 import HomepageLink from '../components/HomepageLink';
 import Page from '../components/Page';
+import PageTitle from '../components/PageTitle';
+import UsefulLinks from '../components/UsefulLinks';
 
 const Home = () => (
   <Page>
     <Container>
-      <Grid container>
-        <Grid item>
-          <Typography variant="h3">Welcome to the PoE Pocket Guide</Typography>
-        </Grid>
-      </Grid>
+      <PageTitle title="Welcome to the PoE Pocket Guide" />
       <GridList cols={3} spacing={8}>
         <GridListTile>
-          <HomepageLink
-            href="https://www.pathofexile.com/trade"
-            title="Official PoE Trade"
-          />
-        </GridListTile>
-        <GridListTile>
-          <HomepageLink href="https://poe.ninja/" title="PoE Ninja" />
-        </GridListTile>
-        <GridListTile>
-          <HomepageLink
-            href="https://www.craftofexile.com/"
-            title="Craft of Exile"
-          />
-        </GridListTile>
-        <GridListTile>
-          <HomepageLink href="https://poedb.tw/" title="PoEDB" />
+          <HomepageLink href="/campaign" title="Leveling Guide" />
         </GridListTile>
       </GridList>
+      <UsefulLinks />
     </Container>
   </Page>
 );
