@@ -37,6 +37,11 @@ const HeaderMenu = () => {
               <ListItemText>Leveling Guide</ListItemText>
             </ListItem>
           </Link>
+          <Link href="/cheatsheets" passHref>
+            <ListItem button>
+              <ListItemText>Cheatsheets</ListItemText>
+            </ListItem>
+          </Link>
         </List>
       </Drawer>
     </>
