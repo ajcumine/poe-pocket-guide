@@ -15,6 +15,9 @@ const Home = () => (
         <GridListTile>
           <HomepageLink href="/campaign" title="Leveling Guide" />
         </GridListTile>
+        <GridListTile>
+          <HomepageLink href="/cheatsheets" title="Cheatsheets" />
+        </GridListTile>
       </GridList>
       <UsefulLinks />
     </Container>

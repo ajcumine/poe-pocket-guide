@@ -16,3 +16,18 @@ export interface Campaign {
 export interface ActNotes {
   [actNo: string]: string;
 }
+
+export interface BetrayalAgentEffect {
+  effect: string;
+  quality: 'great' | 'good' | 'neutral' | 'bad';
+}
+
+export interface BetrayalAgent {
+  name: string;
+  transportation: BetrayalAgentEffect;
+  fortification: BetrayalAgentEffect;
+  research: BetrayalAgentEffect;
+  intervention: BetrayalAgentEffect;
+}
+
+export type Betrayal = Array<BetrayalAgent>;
