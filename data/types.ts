@@ -31,3 +31,12 @@ export interface BetrayalAgent {
 }
 
 export type Betrayal = Array<BetrayalAgent>;
+
+export interface MenuItem {
+  name: string;
+  href: string;
+}
+
+export interface MenuItems {
+  [itemNo: string]: MenuItem;
+}

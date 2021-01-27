@@ -9,7 +9,7 @@ import {
 import Link from 'next/link';
 
 const InternalLink = ({ title, href }: { title: string; href: string }) => (
-  <Link href={href}>
+  <Link href={href} passHref>
     <Card variant="outlined" raised>
       <CardActionArea>
         <CardContent>
