@@ -12,6 +12,8 @@ import HomeIcon from '@material-ui/icons/Home';
 import MenuIcon from '@material-ui/icons/Menu';
 import Link from 'next/link';
 
+import menuItems from '../data/menu';
+
 const HeaderMenu = () => {
   const [showDrawer, toggleDrawer] = useState(false);
 
@@ -32,16 +34,17 @@ const HeaderMenu = () => {
               <ListItemText>Home</ListItemText>
             </ListItem>
           </Link>
-          <Link href="/campaign" passHref>
-            <ListItem button>
-              <ListItemText>Leveling Guide</ListItemText>
-            </ListItem>
-          </Link>
-          <Link href="/cheatsheets" passHref>
-            <ListItem button>
-              <ListItemText>Cheatsheets</ListItemText>
-            </ListItem>
-          </Link>
+          {Object.keys(menuItems).map((itemNo) => (
+            <Link
+              key={menuItems[itemNo].href}
+              href={menuItems[itemNo].href}
+              passHref
+            >
+              <ListItem button>
+                <ListItemText>{menuItems[itemNo].name}</ListItemText>
+              </ListItem>
+            </Link>
+          ))}
         </List>
       </Drawer>
     </>
