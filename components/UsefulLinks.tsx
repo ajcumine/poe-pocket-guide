@@ -2,6 +2,7 @@ import React from 'react';
 
 import { GridList, GridListTile, Typography } from '@material-ui/core';
 
+import usefulLinks from '../data/usefulLinks';
 import HomepageLink from './HomepageLink';
 
 const UsefulLinks = () => (
@@ -9,26 +10,15 @@ const UsefulLinks = () => (
     <GridListTile cols={3} style={{ height: 'auto' }}>
       <Typography variant="h5">Useful Links:</Typography>
     </GridListTile>
-    <GridListTile>
-      <HomepageLink
-        external
-        href="https://www.pathofexile.com/trade"
-        title="Official PoE Trade"
-      />
-    </GridListTile>
-    <GridListTile>
-      <HomepageLink external href="https://poe.ninja/" title="PoE Ninja" />
-    </GridListTile>
-    <GridListTile>
-      <HomepageLink
-        external
-        href="https://www.craftofexile.com/"
-        title="Craft of Exile"
-      />
-    </GridListTile>
-    <GridListTile>
-      <HomepageLink external href="https://poedb.tw/" title="PoEDB" />
-    </GridListTile>
+    {Object.keys(usefulLinks).map((linkNo) => (
+      <GridListTile key={usefulLinks[linkNo].name}>
+        <HomepageLink
+          external
+          href={usefulLinks[linkNo].href}
+          title={usefulLinks[linkNo].name}
+        />
+      </GridListTile>
+    ))}
   </GridList>
 );
 
